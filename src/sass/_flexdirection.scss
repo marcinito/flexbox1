@@ -1,0 +1,49 @@
+.direction{
+   
+    &__inputy{
+        display:flex;
+        justify-content: center;
+        border:1px solid black;
+        border-bottom:7px solid blue;
+        &__label{
+            font-size:20px;
+            font-weight:bold;
+            color:darkblue;
+           
+        }
+        &__input{
+            margin:20px;
+            width:30px;
+            height:30px;
+            border-radius:30px;
+   
+        }
+    }
+    &__square{
+        &__box{
+            @include square(100px,100px,darkorange){
+                border:3px solid green;
+            }
+            font-size:50px;
+            text-align:center;
+            text-shadow:4px 4px 6px skyblue;
+        }
+    }
+}
+/**////////////////////////////////////klasy do umieszczania w direction__Square zeby kwadraty ustawialy sie zgodnie z flex bo*//
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.rowreverse{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+}
+.columnreverse{
+    display:flex;
+    flex-direction: column-reverse;
+}

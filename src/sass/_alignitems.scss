@@ -1,0 +1,35 @@
+.align{
+    &__inputy{
+        display:flex;
+        justify-content: center;
+        border:1px solid black;
+        border-bottom:7px solid blue;
+        &__label{
+            font-size:20px;
+            font-weight:bold;
+            color:darkblue;
+           
+        }
+      &__input{
+        width:30px;
+        height:30px;
+        margin:20px;
+      }
+}
+&__example{
+    &__square{
+        @include square(100px,100px,skyblue){
+            border:2px solid mediumturquoise;
+        }
+    }
+}
+}
+/////////////////////////////////////////////style dla ustawien flex boxa w align--example
+.align__example{
+    display:flex;
+    flex-direction:flex-start;
+}
+.astretch{
+    display:flex;
+    align-items: stretch;
+}

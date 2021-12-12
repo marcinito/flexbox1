@@ -1,0 +1,14 @@
+.stronaglowna{
+    &__h1{
+        color:lighten(blue,18%);
+        text-shadow:3px 3px 6px lighten(blue,18%);
+    }
+    &__p{
+        font-size:20px;
+    }
+    &__img{
+        position:relative;
+        left:100px;
+        top:50px;
+    }
+}

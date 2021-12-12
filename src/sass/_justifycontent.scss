@@ -1,0 +1,61 @@
+.justify{
+    &__inputy{
+        border-bottom:7px solid blue;
+        display:flex;
+        justify-content: center;
+        &__input{
+            height:30px;
+            width:30px;
+            margin:20px;
+        }
+        &__label{
+            font-size:25px;
+           
+            font-weight:bold;
+            color:darkblue;
+          
+          
+        }
+     &__label:hover{
+         background-color: rgb(27, 126, 192);
+         border-radius:20px;
+         border:1px solid red;
+     }
+    }
+    &__example{
+     &__square{
+        @include square(100px,100px,lighten(green,20%)){
+            border:3px solid orange;
+            text-align:center;
+            font-size: 50px;
+            text-shadow:4px 4px 6px blue;
+        }
+     }
+    }
+}
+///////////////style do ustawienia flex boxa justify content //
+.start{
+    display:flex;
+    justify-content: flex-start;
+}
+.center{
+    display:flex;
+    justify-content: center;
+}
+.end{
+    display:flex;
+    justify-content: flex-end;
+}
+.around{
+    
+        display:flex;
+        justify-content: space-around;
+}
+.evenly{
+    display:flex;
+    justify-content: space-evenly;
+}
+.between{
+    display:flex;
+    justify-content: space-between;
+}

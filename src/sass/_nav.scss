@@ -1,0 +1,38 @@
+.nav{
+    
+    width:200px;
+    height:70vh;
+   border:solid 7px blue;
+    border-top:transparent;
+    border-right:transparent;
+
+    
+   
+    &__ul{
+  
+  
+  height:100%;
+
+  
+  justify-content: center;
+  &__li{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height:10vh;
+      transition:.2s;
+      a{
+          color:darkblue;
+          font-size:25px;
+          text-decoration:none;
+      }
+   
+  }
+  &__li:hover{
+    background-color:green;
+    border-radius:10px;
+    transform:translateX(3px) translateY(3px)
+}
+     
+    }
+}

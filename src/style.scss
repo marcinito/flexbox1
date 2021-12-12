@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@mixin square($width,$height,$color){
+    width:$width;
+    height:$height;
+    background-color:$color;
+    @content
+}
+.box{
+    width:100%;
+    height:100vh;
+    background-color:skyblue;
+
+}
+//down to styl do srodka strony do navigaci i menu zeby je wyrownac
+.axis{
+    display:flex;
+    width:100%;
+    background-color:white;
+    height:70vh;
+   
+}
+@import './sass/_logo.scss';
+@import './sass/_nav.scss';
+@import './sass/_main.scss';
+@import './sass/_stronaglowna.scss';
+@import './sass/_flexdirection.scss';
+@import './sass/_justifycontent.scss';
+@import './sass/_navactive.scss';
+@import './sass/_alignitems.scss';
+@import './sass/_axios.scss';
